@@ -1,30 +1,58 @@
+
 $color1: #f1685a;
 $color2: #9ee4d4;
 $color3: #7693a2;
 $color4: #b5ecf0;
 
+
+@mixin circle-badge($color) {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: $color;
+}
+
+.word{
+  font-family: 'Nunito Sans', sans-serif;
+}
 .title-dashboard {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 .color-i-dashboard {
   color: $color3;
 }
-.card-dashboard {  
+.card-dashboard {
   text-align: center;
 }
-.number-card {
-  font-size: x-large;
+.number-card {  
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 3rem;
 }
 .text-card {
   color: $color3;
+  font-size: 1rem;
 }
-.circle-badge{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    background-color: $color1;
+.circle-badge1 {
+  @include circle-badge($color1);
 }
-.icon-badge{
-    margin: 25%;
-    color: white;
+.circle-badge2 {
+  @include circle-badge($color2);
+}
+.circle-badge3 {
+  @include circle-badge($color3);
+}
+.circle-badge4 {
+  @include circle-badge($color4);
+}
+.icon-badge {
+  margin: 25%;
+  color: white;
+}
+.i-card{
+  position: absolute;
+  margin-left: 50%;
+}
+.i-picker{
+  position: absolute;
 }

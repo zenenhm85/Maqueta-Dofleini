@@ -1,14 +1,22 @@
-<div class="container-fluid">
+<div class="container-fluid word">
   <div class="row title-dashboard">
     <div class="col-sm-12 col-md-6">
-      <h6>
+      <h2 class="word">
         Resumen de ventas
         <i class="fa fa-info-circle color-i-dashboard" aria-hidden="true"></i>
-      </h6>
+      </h2>
     </div>
     <div class="col-sm-12 col-md-6">
       <div class="form-group d-flex flex-row-reverse">
-        <input type="date" />
+        <mat-form-field class="example-full-width text-center" appearance="fill">
+          <i class="fa fa-calendar i-picker" aria-hidden="true"></i>
+          <mat-label>Seleccionar</mat-label>
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle matSuffix [for]="picker">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
       </div>
     </div>
   </div>
@@ -16,13 +24,15 @@
     <div class="col-sm-12 col-md-3 card-dashboard">
       <div class="card">
         <div class="card-body">
-          <p></p>
           <p>
-            <span class="badge circle-badge"
-              ><i class="fa fa-file-text-o fa-3x icon-badge" aria-hidden="true"></i>
+            <span class="badge circle-badge1"
+              ><i
+                class="fa fa-file-text-o fa-3x icon-badge"
+                aria-hidden="true"
+              ></i>
             </span>
           </p>
-          <p class="number-card"><b>$0</b></p>
+          <p class="number-card">$0</p>
 
           <p class="text-card">Ad spend</p>
         </div>
@@ -30,17 +40,46 @@
     </div>
     <div class="col-sm-12 col-md-3 card-dashboard">
       <div class="card">
-        <div class="card-body"></div>
+        <div class="card-body">
+          
+          <p>
+            <i class="fa fa-info-circle color-i-dashboard i-card" aria-hidden="true"></i>
+            <span class="badge circle-badge2"
+              ><i class="fa fa-user-o fa-3x icon-badge" aria-hidden="true"></i>
+            </span>
+          </p>
+          <p class="number-card">0</p>
+
+          <p class="text-card">Nuevos contactos</p>
+        </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-3 card-dashboard">
       <div class="card">
-        <div class="card-body"></div>
+        <div class="card-body">
+          <p>
+            <span class="badge circle-badge3"
+              ><i class="fa fa-smile-o fa-3x icon-badge" aria-hidden="true"></i>
+            </span>
+          </p>
+          <p class="number-card">0</p>
+
+          <p class="text-card">Oportunidades abiertas</p>
+        </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-3 card-dashboard">
       <div class="card">
-        <div class="card-body"></div>
+        <div class="card-body">
+          <p>
+            <span class="badge circle-badge4"
+              ><i class="fa fa-star-o fa-3x icon-badge" aria-hidden="true"></i>
+            </span>
+          </p>
+          <p class="number-card">0</p>
+
+          <p class="text-card">Oportunidades ganadas</p>
+        </div>
       </div>
     </div>
   </div>
