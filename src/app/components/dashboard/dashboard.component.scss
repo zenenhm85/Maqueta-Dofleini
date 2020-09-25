@@ -1,0 +1,30 @@
+$color1: #f1685a;
+$color2: #9ee4d4;
+$color3: #7693a2;
+$color4: #b5ecf0;
+
+.title-dashboard {
+  padding-top: 10px;
+}
+.color-i-dashboard {
+  color: $color3;
+}
+.card-dashboard {  
+  text-align: center;
+}
+.number-card {
+  font-size: x-large;
+}
+.text-card {
+  color: $color3;
+}
+.circle-badge{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: $color1;
+}
+.icon-badge{
+    margin: 25%;
+    color: white;
+}
